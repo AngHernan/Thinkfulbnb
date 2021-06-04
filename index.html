@@ -34,7 +34,7 @@
       <!-- Stay -->
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
-        <div class="group">
+        <div class="formgroup">
         <form class="form" action="process-form.js" method="post">
           <!-- Add the HTML input elements here -->
         <div class="formitem">
@@ -43,19 +43,19 @@
           </div>
           <div class="formitem">
           <label for="arrive">Arrive</label>
-          <input type="date" id="start" name="trip-start"
+          <input type="date" id="arrive" name="trip-start"
           value="2018-07-22"
           min="2018-01-01" max="2022-12-31">
         </div>
         <div class="formitem">
           <label for="depart">Depart</label>
-          <input type="date" id="end" name="trip-end"
+          <input type="date" id="depart" name="trip-end"
           value="2018-07-22"
           min="2018-01-01" max="2022-12-31">
         </div>
         <div class="formitem">
           <label for="type">Type</label>
-          <select name="Type" size="1">
+          <select id="type"  name="Type" size="1">
             <option value="apartment">Apartment</option>
             <option value="barn">Barn</option>
             <option value="castle">Castle</option>
@@ -66,7 +66,7 @@
           </select>
         </div>
           <div class="button">
-            <button type="search">Search</button>
+            <button type="submit">Search</button>
           </div>
         </form>
         </div>
@@ -128,7 +128,6 @@
         <h3>Pet-friendly</h3>
         <img src="images/pet-friendly.png" alt="Thinkfulbnb - Pet-friendly" />
               </div>
-        </div>
         </div>
       </section>
 

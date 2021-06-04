@@ -67,7 +67,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -103,13 +103,17 @@ form {
 }
 
 form label {
+  display: flex;
   font-weight: bold;
+  padding: 5px;
+  flex-direction: row;
+  flex: 0 0 70px;
 }
 
 form select,
 form input {
-  height: 50px;
-  width: 100%;
+  align-content: right;
+  flex: 0 0 170px
 }
 
 form button {
@@ -118,8 +122,18 @@ form button {
   color: #fff;
   font-size: 24px;
   padding: 25px;
+  justify-content: center;
 }
 
+.formitem{
+  justify-self: unset;
+  margin: 15px 0px;
+  display: flex;
+}
+
+.button {
+  text-align: center;
+}
 /*-------- images --------*/
 section img{
   width: 100%;
@@ -137,7 +151,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   /* -------  General Styles ------- */
 
 body {
@@ -207,14 +221,51 @@ main img {
   }
 
   form {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    flex: 1;
     border: 2px solid #ff385c;
     padding: 10px;
-    align-items: center;
+    flex-wrap: wrap;
   }
+  form label {
+    display: flex;
+    font-weight: bold;
+    padding: 5px;
+    flex-direction: row;
+    justify-content: inherit;
+    text-align: right;
 
+  }
+  
+  form select,
+  form input {
+    flex: 0 0 0px;
+    height: 30px;
+    
+  }
+  
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 45px;
+    justify-content: center;
+  }
+  
+  .formitem{
+    justify-self: unset;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 0px;
+  }
+  
+  .button {
+    text-align: center;
+    margin-left: 100px;
+  }
 
 
   footer {
@@ -243,11 +294,9 @@ main img {
     flex-direction: initial;
   }
 
-  .formitem{
-    flex: 1;
-    flex-direction: column;
-    margin: 0 20px 0 0;
-    padding-right: 75px;
+  .formgroup{
+    flex-direction: row;
+    
   }
   .item {
     justify-content: center;
