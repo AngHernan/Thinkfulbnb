@@ -39,6 +39,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .item {
@@ -103,17 +104,22 @@ form {
 }
 
 form label {
-  display: flex;
-  font-weight: bold;
-  padding: 5px;
   flex-direction: row;
-  flex: 0 0 70px;
+    justify-content: flex-end;
+    text-align: left;
+    line-height: 26px;
+    /* display: flex; */
+    width: 60px;
+    margin-bottom: 20px;
 }
+  
+
 
 form select,
 form input {
-  align-content: right;
-  flex: 0 0 170px
+  height: 20px;
+  flex: 1 0 170px;
+  margin-left: 20px;
 }
 
 form button {
@@ -121,13 +127,17 @@ form button {
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 25px;
+  margin-top: 20px;
+  padding: 10px 90px;
   justify-content: center;
+
+}
+
+.locationitem {
+  width: 80%;
 }
 
 .formitem{
-  justify-self: unset;
-  margin: 15px 0px;
   display: flex;
 }
 
@@ -221,28 +231,31 @@ main img {
   }
 
   form {
-    justify-content: space-between;
+    justify-content: left;
     display: flex;
     flex-direction: row;
     border: 2px solid #ff385c;
     padding: 10px;
     flex-wrap: wrap;
+    align-items: center;
   }
   form label {
-    display: flex;
     font-weight: bold;
-    padding: 5px;
     flex-direction: row;
-    justify-content: inherit;
-    text-align: right;
+    text-align: left;
+    line-height: 0px;
+    width: 90px;
+    margin-bottom: 10px;
+  } 
 
+  form select{
+    width: 120px;
+    margin-left: 0;
   }
-  
-  form select,
+
   form input {
-    flex: 0 0 0px;
-    height: 30px;
-    
+    width: 80%;
+    margin-left: 0;
   }
   
   form button {
@@ -250,21 +263,23 @@ main img {
     border: none;
     color: #fff;
     font-size: 24px;
-    padding: 15px 45px;
+    padding: 10px 15px;
+    margin-top: 0;
     justify-content: center;
-  }
+}
+
   
   .formitem{
-    justify-self: unset;
-    margin: 10px 10px;
-    display: flex;
+    /*justify-self: unset; */
+    /* display: flex; */
     flex-wrap: wrap;
-    flex: 0 0 0px;
+    flex: 1 0 18%;
+    display: block;
+    width: 155px;
   }
-  
   .button {
     text-align: center;
-    margin-left: 100px;
+  
   }
 
 
@@ -332,7 +347,7 @@ main img {
     flex: 1;
     margin: 10px;
     flex-wrap: wrap;
-    padding-top: 250px;
+    
   }
   .item >* {
     flex: 1;
@@ -340,4 +355,33 @@ main img {
   .button{
     padding: 15px;
   }
+  
+ 
+  select {
+    width: 90%;
   }
+
+}
+
+@media all and (min-width: 1000px) {
+  form select{
+    width: 170px;
+  }
+
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 45px;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.button {
+  text-align: center;
+
+}
+
+
+}
