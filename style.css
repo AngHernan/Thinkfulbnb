@@ -352,9 +352,7 @@ main img {
   .item >* {
     flex: 1;
   }
-  .button{
-    padding: 15px;
-  }
+
   
  
   select {
@@ -499,7 +497,7 @@ form label {
   flex: 1;
   margin: 10px;
   flex-wrap: wrap;
-  padding-top: 250px;
+  padding-top: 150px;
 }
 
 }
