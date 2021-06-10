@@ -440,3 +440,66 @@ form label {
   padding-top: 80px;
 }
 }
+
+
+@media all and (min-width: 2000px) {
+  form select{
+    width: 170px;
+  }
+
+  form button {
+    background-color: #ff385c;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px 45px;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.button {
+  text-align: center;
+
+}
+
+  
+.formitem{
+  /*justify-self: unset; */
+  /* display: flex; */
+  flex-wrap: wrap;
+  flex: 1 0 15%;
+  display: flex;
+  width: 155px;
+}
+
+form select, form input {
+  height: 20px;
+  flex: 1 0 170px;
+  margin-left: 0px;
+}
+
+form label {
+  font-weight: bold;
+  flex-direction: row;
+  text-align: center;
+  line-height: 0px;
+  width: 90px;
+  /* margin-bottom: 10px; */
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.button {
+  margin-left: 50px;
+  text-align: center;
+}
+
+.hostitem {
+  justify-content: center;
+  align-items: baseline;
+  flex: 1;
+  margin: 10px;
+  flex-wrap: wrap;
+  padding-top: 250px;
+}
+
+}
